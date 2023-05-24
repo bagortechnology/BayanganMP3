@@ -323,16 +323,16 @@
                             <form action="{{ route('subscriber_send_email') }}" method="post" class="form_subscribe_ajax">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control">
+                                    <input type="text" name="email" class="form-control" style="border-radius: 15px; border-color: #E38B29; background-color: #E38B29">
                                     <span class="text-danger error-text email_error"></span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29">
+                                    <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29; border-radius: 15px">
                                 </div>
                                 <div class="mt-4">
-                                    <p>*By subscribing, you agree to receive marketing email messages from 
+                                    <span class="small">*By subscribing, you agree to receive marketing email messages from 
                                         Bayangan Hotel and Beach Resort at the email address provided. Unsubscribe
-                                         at any time. View our Privacy Policy and Terms of Services</p>
+                                         at any time. View our Privacy Policy and Terms of Services</span>
                                 </div>
                             </form>
                         </div>
