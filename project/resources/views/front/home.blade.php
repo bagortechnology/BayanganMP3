@@ -179,28 +179,6 @@
 @endif
 
 
-{{-- <section class="rooms" style="background: linear-gradient(to right,#FEFAE0,transparent),url('./uploads/DR_2.jpg');">
-    <div class="container">
-        <div class="rooms-content d-flex flex-column justify-content-center gap-4">
-            <div class="title col-lg-3" style="border-left: 6px solid #E38B29; padding-left: .6rem; color:#1A5F7A">
-                <h3 style="letter-spacing:0.15em; font-size:20px">ROOMS AND VILLAS</h3>
-                <h2><em>Comfort away from home</em></h2>
-            </div>
-            <div class="col-lg-8">
-                <p class="text-lg-start">
-                    Bayangan Hotel and Beach Resort offers a selection of beautifully designed guest rooms, including accessible options.
-                    Each guest room and suite is thoughtfully appointed with premium features such as granite countertops, luxurious linens, 
-                    a 55" flat-screen TV, complimentary Wi-Fi, upscale bath amenities, and plush bathrobes. 
-                    Moreover, the majority of rooms boast stunning views of the marina from private 
-                    balconies or outdoor patio areas, providing a picturesque setting to relax and unwind.
-                </p>
-                <button class="btn btn_view rounded-0 text-white" style="background-color: #E38B29">BOOK ROOMS</button>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
-
 @if($global_setting_data->home_latest_post_status == 'Show')
 <div class="blog-item">
     <div class="container">
@@ -261,24 +239,6 @@
     </div>
 </section>
 
-{{-- <section class="location" style="background-color: #FEFAE0; color: #1A5F7A">
-    <div class="container">
-        <div class="location_content d-flex flex-column justify-content-center gap-4" style="min-height: 100vh">
-            <div class="title" style="border-left: 6px solid #E38B29; padding-left: .6rem">
-                <h3 class="text-md-start" style="letter-spacing:0.15em; font-size:20px">LOCATION</h3>
-                <h1 class="text-md-start">See Zamboanga del Norte</h1>
-            </div>
-            <div>
-                <p class="text-md-start w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis
-                    asperiores, delectus accusamus aut esse consectetur nisi, debitis quibusdam,
-                    laborum unde atque excepturi maxime. Laboriosam, illum quia culpa quasi
-                    doloremque iusto aperiam placeat omnis, obcaecati quae, fuga labore rem veniam?</p>
-                    <button class="btn btn__explore rounded-0 text-white" style="background-color: #E38B29">Explore</button>
-            </div>
-            
-        </div>
-    </div>
-</section> --}}
 
 <div class="overflow-hidden">
         <div class="row d-flex flex-wrap gallery__content">
