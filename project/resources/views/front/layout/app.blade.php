@@ -323,7 +323,7 @@
                             <form action="{{ route('subscriber_send_email') }}" method="post" class="form_subscribe_ajax">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
+                                    <input type="text" name="email" placeholder="email" class="form-control" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
                                     <span class="text-danger error-text email_error"></span>
                                 </div>
                                 <div class="form-group">
