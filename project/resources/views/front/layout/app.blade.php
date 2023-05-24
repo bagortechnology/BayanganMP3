@@ -17,6 +17,9 @@
 
 
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
         
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ $global_setting_data->analytic_id }}"></script>
@@ -239,18 +242,23 @@
             <div class="footer py-0">
             <div class="position-relative overflow-hidden">
                 <div class="row" style="">
-                    <div class="col-md-6 col-lg-3 py-5 d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 col-lg-4 py-5 d-flex justify-content-center align-items-center">
                         <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
-                            <img src="./uploads/Bayangan Hotel Logo.png" alt="" width="150px" height="180px">
-                            <h2 class="text-center">Bayangan Hotel and Beach Resort</h2>
+                            <img src="{{ asset('uploads/logo.svg') }}" alt="" width="150px" height="180px">
+                            <h2 class="text-center bayangan" style="font-family: 'Allura', cursive"> Bayangan Hotel and Beach Resort</h2>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
+                    <div class="col-md-6 col-lg-4 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item  container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Useful Links</h2>
+                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>PLAN YOUR VISIT</h2>
                             <ul class="useful-links">
                                 <li><a href="{{ route('home') }}">Home</a></li>
-
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+                                <li><a href="{{ route('room') }}">Accommodation</a></li>
+                                <li><a href="{{ route('photo_gallery') }}">Photo Gallery</a></li>
+                                <li><a href="{{ route('video_gallery') }}">Video Gallery</a></li>
+                                <li><a href="{{ route('blog') }}">Blog</a></li>
+                                <li><a href="{{ route('contact') }}">Contact</a></li>
                                 @if($global_page_data->terms_status == 1)
                                 <li><a href="{{ route('terms') }}">{{ $global_page_data->terms_heading }}</a></li>
                                 @endif
@@ -265,11 +273,10 @@
                             </ul>
                         </div>
                     </div>
-                    
-                    
-                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
-                        <div class="item  container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Contact</h2>
+
+                    <div class="col-md-6 col-lg-4 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
+                        <div class="item container-fluid">
+                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>HOTEL RESERVATION</h2>
                             <div class="list-item">
                                 <div class="left">
                                     <i class="fa fa-map-marker"></i>
@@ -294,47 +301,20 @@
                                     {{ $global_setting_data->footer_email }}
                                 </div>
                             </div>
-                            <ul class="social">
-
-                                @if($global_setting_data->facebook != '')
-                                <li><a href="{{ $global_setting_data->facebook }}"><i class="fa fa-facebook-f"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->twitter != '')
-                                <li><a href="{{ $global_setting_data->twitter }}"><i class="fa fa-twitter"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->linkedin != '')
-                                <li><a href="{{ $global_setting_data->linkedin }}"><i class="fa fa-linkedin"></i></a></li>
-                                @endif
-
-                                @if($global_setting_data->pinterest != '')
-                                <li><a href="{{ $global_setting_data->pinterest }}"><i class="fa fa-pinterest-p"></i></a></li>
-                                @endif
-                                
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
-                        <div class="item container-fluid">
-                            <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>Newsletter</h2>
-                            <p>
-                                In order to get the latest news and other great items, please subscribe us here: 
-                            </p>
                             <form action="{{ route('subscriber_send_email') }}" method="post" class="form_subscribe_ajax">
                                 @csrf
+                                <h3 class="lead">SIGN UP FOR HOTEL OFFERS</h3>
                                 <div class="form-group">
-                                    <input type="text" name="email" placeholder="email address" class="form-control text-white" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
+                                    <input type="text" name="email" placeholder="EMAIL" class="form-control text-white" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
                                     <span class="text-danger error-text email_error"></span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-primary" value="Subscribe Now" style="background-color: #E38B29; border-radius: 15px">
+                                    <input type="submit" class="btn btn-primary" value="SUBSCRIBE" style="background-color: #E38B29; border-radius: 15px">
                                 </div>
                                 <div class="mt-4">
-                                    <span class="small">*By subscribing, you agree to receive marketing email messages from 
+                                    <span class="small">By subscribing, you agree to receive marketing email messages from 
                                         Bayangan Hotel and Beach Resort at the email address provided. Unsubscribe
-                                         at any time. View our Privacy Policy and Terms of Services</span>
+                                         at any time. View our <a href="{{ route('privacy') }}" style="text-decoration: underline; color: #FEFAE0">Privacy Policy</a> and <a href="{{ route('terms') }}" style="text-decoration: underline; color: #FEFAE0">Terms of Services</a></span>
                                 </div>
                             </form>
                         </div>
@@ -345,7 +325,7 @@
         </div>
 </footer>
 
-        <div class="copyright">
+        <div class="copyright small">
             {{ $global_setting_data->copyright }}
         </div>
      

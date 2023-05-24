@@ -722,16 +722,19 @@ sup{
 	top: 0;
 	left: 0;
 }
+
 .footer ul.useful-links li a {
-	color: #E38B29;
-}
+		color: #FEFAE0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 
 /* Copyright */
 .copyright {
-	background: #1A5F7A;
+	background: #034159;
 	color: #fff;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 	font-size: 14px;
 }
@@ -1368,4 +1371,10 @@ sup{
   
   ::-ms-input-placeholder { /* Microsoft Edge */
 	color: #E38B29 !important;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+  .bayangan{
+	font-family: 'Allura', cursive;
   }
