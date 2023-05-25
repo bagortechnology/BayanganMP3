@@ -238,7 +238,6 @@
 
 
         <footer>
-
             <div class="footer py-0">
             <div class="position-relative overflow-hidden">
                 <div class="row" style="">
