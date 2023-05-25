@@ -243,7 +243,7 @@
                 <div class="row" style="">
                     <div class="col-md-12 col-lg-4 py-5 d-flex justify-content-center align-items-center">
                         <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('uploads/logo.svg') }}" alt="" width="150px" height="180px">
+                           <a href="{{ route('home') }}"> <img src="{{ asset('uploads/logo.svg') }}" alt="" width="150px" height="180px"> </a>
                             <h2 class="text-center bayangan" style="font-family: 'Allura', cursive"> Bayangan Hotel and Beach Resort</h2>
                         </div>
                     </div>
