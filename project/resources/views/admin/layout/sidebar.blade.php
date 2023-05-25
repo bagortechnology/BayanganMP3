@@ -17,9 +17,9 @@
 
             <li class="{{ Request::is('/') ? 'active' : '' }}"><a class="nav-link" href="{{ route('home') }}" target="_blank" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="View Website"><i class="fa fa-eye"></i> <span>View Website</span></a></li>
 
-            <li class="{{ Request::is('admin/customers') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_customer') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Customers"><i class="bx bxs-user-rectangle bx-tada-hover"></i> <span>Customers</span></a></li>
+            <li class="{{ Request::is('admin/customers') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_customer') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Customers"><i class="bx bx-user bx-tada-hover"></i> <span>Customers</span></a></li>
 
-            <li class="{{ Request::is('admin/order/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_orders') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Bookings"><i class="bx bxs-book bx-tada-hover"></i> <span>Bookings</span></a></li>
+            <li class="{{ Request::is('admin/order/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_orders') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Bookings"><i class="bx bx-bed bx-tada-hover"></i> <span>Bookings</span></a></li>
 
             <li class="nav-item dropdown {{ Request::is('admin/amenity/view')||Request::is('admin/room/view') ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="bx bx-hotel bx-tada-hover"></i><span>Room Section</span></a>
@@ -35,7 +35,7 @@
 
 
             <li class="nav-item dropdown {{ Request::is('admin/page/about')||Request::is('admin/page/terms')||Request::is('admin/page/privacy')||Request::is('admin/page/contact')||Request::is('admin/page/photo-gallery')||Request::is('admin/page/video-gallery')||Request::is('admin/page/faq')||Request::is('admin/page/blog')||Request::is('admin/page/room')||Request::is('admin/page/cart')||Request::is('admin/page/checkout')||Request::is('admin/page/payment')||Request::is('admin/page/signup')||Request::is('admin/page/signin')||Request::is('admin/page/forget-password')||Request::is('admin/page/reset-password') ? 'active' : '' }}">
-                <a href="#" class="nav-link has-dropdown"><i class="bx bxs-parking bx-tada-hover"></i><span>Pages</span></a>
+                <a href="#" class="nav-link has-dropdown"><i class="bx bx-receipt bx-tada-hover"></i><span>Pages</span></a>
                 <ul class="dropdown-menu">
                     <li class="{{ Request::is('admin/page/about') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_page_about') }}"><i class="fa fa-angle-right"></i> About</a></li>
 
