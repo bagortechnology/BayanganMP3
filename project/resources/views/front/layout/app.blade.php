@@ -242,7 +242,7 @@
             <div class="footer py-0">
             <div class="position-relative overflow-hidden">
                 <div class="row" style="">
-                    <div class="col-md-6 col-lg-4 py-5 d-flex justify-content-center align-items-center">
+                    <div class="col-md-12 col-lg-4 py-5 d-flex justify-content-center align-items-center">
                         <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
                             <img src="{{ asset('uploads/logo.svg') }}" alt="" width="150px" height="180px">
                             <h2 class="text-center bayangan" style="font-family: 'Allura', cursive"> Bayangan Hotel and Beach Resort</h2>
