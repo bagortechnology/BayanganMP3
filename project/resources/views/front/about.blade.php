@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="page-content">
+<div class="page-content"  style="background-color: #FEFAE0">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
