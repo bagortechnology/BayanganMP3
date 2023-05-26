@@ -317,17 +317,15 @@ sup{
 	bottom: 20px;
 	right: 20px;
 	background-color: #E38B29;
+	border-radius: 50px;
 	color: #fff;
-	opacity: 0.7;
 	z-index: 9999;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	
 }
 
 .scroll-top:hover {
-	opacity: 1;
-	color: #fff;
-	background: #1A5F7A;
+	color: #E38B29;
+	background-color: #FEFAE0;
 }
 
 
@@ -535,15 +533,15 @@ sup{
 	padding: 20px;
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	transition: ease-in-out 0.3s;
 }
 
 .home-rooms .inner:hover {
 	box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 4px 10px -2px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+	background-color: #FEFAE0;
+	transform: scale(1.1);
 }
 
-.home-rooms .inner:hover{
-	background-color: #FEFAE0;
-}
 .home-rooms .inner .photo {
 	margin-bottom: 10px;
 }
@@ -601,12 +599,14 @@ sup{
 }
 .blog-item .inner {
 	margin-bottom: 40px;
+	transition: ease-in-out 0.4s;
 }
 
 .blog-item .inner:hover {
 	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-	padding: 20px;
+	transform: scale(1.1);
 	border-radius: 10px;
+	padding: 10px;
 	background-color: white;
 }
 .blog-item .inner .photo {
@@ -643,8 +643,8 @@ sup{
 .footer {
 	background-color: #FEFAE0;
 	color: #1A5F7A;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .footer h2.heading {
 	font-size: 20px;
@@ -1378,3 +1378,5 @@ sup{
   .bayangan{
 	font-family: 'Allura', cursive;
   }
+
+  

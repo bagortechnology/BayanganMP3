@@ -56,7 +56,6 @@
             .testimonial-carousel .owl-dots .owl-dot,
             .footer ul.social li a,
             .footer input[type="submit"],
-            .scroll-top,
             .room-detail .right .widget .book-now {
                 background-color: {{ $global_setting_data->theme_color_1 }};
             }
@@ -241,13 +240,13 @@
             <div class="footer py-0">
             <div class="position-relative overflow-hidden">
                 <div class="row" style="">
-                    <div class="col-md-12 col-lg-4 py-5 d-flex justify-content-center align-items-center">
+                    <div class="col-md-12 col-lg-4 py-3 d-flex justify-content-center align-items-center">
                         <div class="item  container-fluid flex-column d-flex justify-content-center align-items-center">
                            <a href="{{ route('home') }}"> <img src="{{ asset('uploads/logo.svg') }}" alt="" width="150px" height="180px"> </a>
-                            <h2 class="text-center bayangan" style="font-family: 'Allura', cursive"> Bayangan Hotel and Beach Resort</h2>
+                            <h2 class="text-center bayangan" style="font-family: 'Allura', cursive"> Bayangan Hotel <br> and<br> Beach Resort</h2>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 py-5" style='background-color: #1A5F7A; color: #FEFAE0'>
+                    <div class="col-md-6 col-lg-4 py-3" style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item  container-fluid">
                             <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>PLAN YOUR VISIT</h2>
                             <ul class="useful-links">
@@ -273,7 +272,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 py-5 " style='background-color: #1A5F7A; color: #FEFAE0'>
+                    <div class="col-md-6 col-lg-4 py-3 " style='background-color: #1A5F7A; color: #FEFAE0'>
                         <div class="item container-fluid">
                             <h2 class="heading" style='border-left: 6px solid #E38B29; padding-left: 1rem'>HOTEL RESERVATION</h2>
                             <div class="list-item">
