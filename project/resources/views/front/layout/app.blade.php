@@ -61,8 +61,9 @@
             }
 
             .slider .text .button a:hover,
+            .bg-website:hover,
             .search-section button[type="submit"],
-            .bg-website {
+             {
                 background-color: {{ $global_setting_data->theme_color_1 }}!important;
             }
 
@@ -81,6 +82,7 @@
             .blog-item .inner .text .button a,
             .home-rooms .big-button a,
             .room-detail .amenity .item,
+            .bg-website,
             .cart .table-cart tr th {
                 background-color: {{ $global_setting_data->theme_color_2 }}!important;
             }
@@ -303,7 +305,7 @@
                                 @csrf
                                 <h3 class="lead">SIGN UP FOR HOTEL OFFERS</h3>
                                 <div class="form-group">
-                                    <input type="text" name="email" placeholder="EMAIL" class="form-control text-white" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
+                                    <input type="text" name="email" class="form-control text-white" style="border-radius: 15px; border-color: #E38B29; background-color: #1A5F7A">
                                     <span class="text-danger error-text email_error"></span>
                                 </div>
                                 <div class="form-group">

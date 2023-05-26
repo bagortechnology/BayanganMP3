@@ -23,15 +23,16 @@
                     <input type="hidden" name="email" value="{{ $email }}">
                     <div class="login-form">
                         <div class="mb-3">
-                            <label for="" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password">
+                            <label for="" class="form-label fw-bold text-secondary">Password</label>
+                            <input type="password" class="form-control" name="password" style="border-color: #E38B29; border-radius: 5px" placeholder="Enter A Strong Password">
+                            <div class="small p-2" style="color: gray">Password must be at least 8 character long, combination of letters, numbers, special characters.</div>
                             @if($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                             @endif
                         </div>
                         <div class="mb-3">
-                            <label for="" class="form-label">Retype Password</label>
-                            <input type="password" class="form-control" name="retype_password">
+                            <label for="" class="form-label fw-bold text-secondary">Confirm Password</label>
+                            <input type="password" class="form-control" name="retype_password" style="border-color: #E38B29; border-radius: 5px" placeholder="Retype your password">
                             @if($errors->has('retype_password'))
                                 <span class="text-danger">{{ $errors->first('retype_password') }}</span>
                             @endif

@@ -48,8 +48,13 @@ p {
 select {
 	width: 100%!important;
 }
+#link{
+	color:#1A5F7A	!important;
+}
 
-
+#link:hover {
+	color: #E38B29 !important;
+}
 
 /* Top */
 .top {
@@ -1361,16 +1366,16 @@ sup{
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #E38B29 !important;
+	color: gray !important;
 	opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: #E38B29 !important;
+	color: gray !important;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-	color: #E38B29 !important;
+	color: gray !important;
   }
 
 

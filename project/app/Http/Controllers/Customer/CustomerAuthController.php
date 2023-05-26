@@ -47,10 +47,13 @@ class CustomerAuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:customers',
-            'password' => 'required',
-            'retype_password' =>'required|same:password'
+            'password' => [
+                'required',
+                'min:8',
+                'regex:/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[^a-zA-Z0-9])/',
+            ],
+            'retype_password' =>'required|same:password',
         ]);
-
 
         $token = hash('sha256', time());
         $password = Hash::make($request->password);
@@ -146,8 +149,12 @@ class CustomerAuthController extends Controller
     public function reset_password_submit(Request $request)
     {
         $request->validate([
-            'password' => 'required',
-            'retype_password' => 'required|same:password'
+            'password' => [
+                'required',
+                'min:8',
+                'regex:/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[^a-zA-Z0-9])/',
+            ],
+            'retype_password' =>'required|same:password',
         ]);
 
         $customer_data = Customer::where('token',$request->token)->where('email',$request->email)->first();

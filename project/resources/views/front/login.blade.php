@@ -21,25 +21,26 @@
                     @csrf
                     <div class="login-form">
                         <div class="mb-3">
-                            <label for="" class="form-label">Email Address</label>
-                            <input type="text" class="form-control" name="email">
+                            <label for="" class="form-label fw-bold text-secondary">Email Address</label>
+                            <input type="text" class="form-control" name="email" style=" color: gray; border-color: #E38B29; border-radius: 5px" placeholder="Enter your email">
                             @if($errors->has('email'))
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
                             @endif
                         </div>
                         <div class="mb-3">
-                            <label for="" class="form-label">Password</label>
-                            <input type="password" class="form-control" name="password">
+                            <label for="" class="form-label fw-bold text-secondary">Password</label>
+                            <input type="password" class="form-control" name="password" style=" color: gray; border-color: #E38B29; border-radius: 5px" placeholder="Enter your password">
                             @if($errors->has('password'))
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                             @endif
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary bg-website">Login</button>
-                            <a href="{{ route('customer_forget_password') }}" class="primary-color">Forget Password?</a>
+                            <button type="submit" class="btn btn-primary bg-website w-100" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;">LOGIN</button>
+                            
                         </div>
+                        <a href="{{ route('customer_forget_password') }}" class="primary-color text-center d-flex mb-2 text-decoration-underline" id="link">Forgot Password?</a>
                         <div class="mb-3">
-                            <a href="{{ route('customer_signup') }}" class="primary-color">New User? Make Registration</a>
+                            <a href="{{ route('customer_signup') }}" class="primary-color" id="link"><span style="color: gray">Not yet a member? </span> <b class ="text-decoration-underline"> Create an account</b></a>
                         </div>
                     </div>
                 </form>
