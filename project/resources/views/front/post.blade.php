@@ -15,11 +15,9 @@
 <div class="page-content">
     <div class="container">
         <div class="row justify-content-center">
-
-
             <div class="col-lg-8 col-md-12">
                 <div class="featured-photo">
-                    <img src="{{ asset('uploads/'.$single_post_data->photo) }}" alt="">
+                    <img src="{{ asset('uploads/'.$single_post_data->photo) }}" alt="featured image" class="img-fluid rounded-bottom">
                 </div>
                 <div class="sub">
                     <div class="item">
