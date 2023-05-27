@@ -12,6 +12,10 @@
     </div>
 </div>
 
+        <!-- BEGIN SHAREAHOLIC CODE -->
+        <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+        <!-- END SHAREAHOLIC CODE -->
+
 <div class="page-content">
     <div class="container">
         <div class="row justify-content-center">
@@ -21,11 +25,11 @@
                 </div>
                 <div class="sub">
                     <div class="item">
-                        <b><i class="fa fa-clock-o"></i></b>
-                        {{ date('d M, Y', strtotime($single_post_data->updated_at)) }}
+                        <b><i class="fa fa-clock-o"></i> Updated</b>
+                        {{ date('M d, Y', strtotime($single_post_data->updated_at)) }}
                     </div>
                     <div class="item">
-                        <b><i class="fa fa-eye"></i></b>
+                        <b><i class="fa fa-eye"></i> Views</b>
                         {{ $single_post_data->total_view }}
                     </div>
                 </div>
