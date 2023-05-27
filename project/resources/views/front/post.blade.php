@@ -47,5 +47,6 @@
 
         </div>
     </div>
+    @include('layout.disqus-comment')
 </div>
 @endsection
