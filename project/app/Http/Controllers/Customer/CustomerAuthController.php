@@ -68,7 +68,8 @@ class CustomerAuthController extends Controller
         $obj->save();
 
         $subject = 'Sign Up Verification';
-        $message = 'Please click on the link below to confirm sign up process:<br>';
+        $message = '<h2>Email Confirmation</h2>';
+        $message .= 'Please click on the link below to confirm sign up process:<br>';
         $message .= '<a href="'.$verification_link.'">';
         $message .= $verification_link;
         $message .= '</a>';
@@ -125,7 +126,8 @@ class CustomerAuthController extends Controller
 
         $reset_link = url('reset-password/'.$token.'/'.$request->email);
         $subject = 'Reset Password';
-        $message = 'Please click on the following link to reset the password: <br>';
+        $message = '<h2>Reset Password</h2>';
+        $message .= 'Please click on the following link to reset the password: <br>';
         $message .= '<a href="'.$reset_link.'">Click here</a>';
 
         Mail::to($request->email)->send(new Websitemail($subject,$message));
