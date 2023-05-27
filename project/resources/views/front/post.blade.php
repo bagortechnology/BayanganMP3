@@ -12,9 +12,6 @@
     </div>
 </div>
 
-
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6212352ed76fda0a"></script>
-
 <div class="page-content">
     <div class="container">
         <div class="row justify-content-center">
@@ -37,9 +34,8 @@
                 <div class="main-text">
                     {!! $single_post_data->content !!}
                 </div>
-                <div class="share-content">
-                    <h2>Share</h2>
-                    <div class="addthis_inline_share_toolbox"></div>
+                <div class="disqus-comment">
+                    @include('front.layout.disqus-comment')
                 </div>
             </div>
 
@@ -47,6 +43,5 @@
 
         </div>
     </div>
-    @include('layout.disqus-comment')
 </div>
 @endsection
