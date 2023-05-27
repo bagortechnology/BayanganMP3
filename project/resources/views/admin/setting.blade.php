@@ -124,21 +124,6 @@
                                 </div>
 
                                 <div class="mb-4">
-                                    <label class="form-label">Twitter</label>
-                                    <input type="text" class="form-control" name="twitter" value="{{ $setting_data->twitter }}">
-                                </div>
-
-                                <div class="mb-4">
-                                    <label class="form-label">LinkedIn</label>
-                                    <input type="text" class="form-control" name="linkedin" value="{{ $setting_data->linkedin }}">
-                                </div>
-
-                                <div class="mb-4">
-                                    <label class="form-label">Pinterest</label>
-                                    <input type="text" class="form-control" name="pinterest" value="{{ $setting_data->pinterest }}">
-                                </div>
-
-                                <div class="mb-4">
                                     <label class="form-label">Google Analytic Id</label>
                                     <input type="text" class="form-control" name="analytic_id" value="{{ $setting_data->analytic_id }}">
                                 </div>
