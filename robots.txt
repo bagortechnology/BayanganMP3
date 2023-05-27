@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://bayangan.fun/sitemap.xml
